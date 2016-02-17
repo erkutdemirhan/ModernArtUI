@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:background="@color/background" >
+
+    <TextView
+        android:id="@+id/dialog_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="@string/dialog_info"
+        android:textColor="@android:color/white"
+        android:textSize="13dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="@string/dialog_title"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/get_information"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:text="@string/get_information" />
+
+        <Button
+            android:id="@+id/not_get_information"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:text="@string/not_get_information" />
+    </LinearLayout>
+
+</LinearLayout>

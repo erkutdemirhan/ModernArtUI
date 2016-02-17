@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background" >
+
+    <android.support.v7.widget.Toolbar
+        android:id            = "@+id/main_toolbar"
+        android:layout_width  = "match_parent"
+        android:layout_height = "wrap_content"
+        android:background    = "@color/primary"
+        android:minHeight     = "?attr/actionBarSize"
+        android:theme         = "@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+            <LinearLayout
+                android:id="@+id/LinearLayout1a"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="horizontal"
+                android:background="@color/color1a">
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout1b"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="horizontal"
+                android:background="@color/color1b">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/LinearLayout2a"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="horizontal"
+                android:background="@color/color2a">
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout2b"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="horizontal"
+                android:background="@color/color2b">
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LinearLayout2c"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="horizontal"
+                android:background="@color/color2c">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:max="255"
+        android:progress="5" />
+
+</LinearLayout>
